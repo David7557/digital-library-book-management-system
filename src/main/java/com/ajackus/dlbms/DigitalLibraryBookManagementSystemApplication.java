@@ -1,4 +1,4 @@
-package com.ajackus.digital_library_book_management_system;
+package com.ajackus.dlbms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
