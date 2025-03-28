@@ -47,13 +47,13 @@ public class BookService {
         return ResponseEntity.ok(bookEntitySet);
     }
 
-    public ResponseEntity<BookEntity> findBybookId(String bookId){
+    public ResponseEntity<BookEntity> findBybookId(String bookId) {
         var book = books.get(bookId);
 
-        if(book != null){
+        if (book != null) {
             return ResponseEntity.ok(book);
-        }else {
-            throw new BookNotFoundByIdException("Book you're trying find with bookId: "+bookId+" is not exist in db");
+        } else {
+            throw new BookNotFoundByIdException("Book you're trying find with bookId: " + bookId + " is not exist in db");
         }
     }
 
