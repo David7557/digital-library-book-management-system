@@ -27,9 +27,16 @@ public class BookController {
         var books = bookService.viewAllBooks();
         return ResponseEntity.ok(books).getBody();
     }
+
     @GetMapping("/{bookId}")
     public ResponseEntity<BookEntity> findBookById(@PathVariable String bookId){
         var book = bookService.findBybookId(bookId);
+        return ResponseEntity.ok(book).getBody();
+    }
+
+    @GetMapping("/{title}")
+    public ResponseEntity<BookEntity> findBookByTitle(@PathVariable String title){
+        var book = bookService.findBookByTitle(title);
         return ResponseEntity.ok(book).getBody();
     }
 
