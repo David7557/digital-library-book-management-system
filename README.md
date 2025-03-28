@@ -41,7 +41,9 @@ The **Digital Library Book Management System** is a Java-based application that 
    mvn spring-boot:run
    ```
 5. The application will be available at:
-   `http://localhost:8080`
+   ```sh
+   http://localhost:8080
+   ```
 7. To stop the Spring Boot application:
    ```sh
    ctrl + c or mvn spring-boot:stop
