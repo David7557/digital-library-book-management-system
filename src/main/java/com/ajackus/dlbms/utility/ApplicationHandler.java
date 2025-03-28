@@ -11,11 +11,10 @@ public class ApplicationHandler {
 
     @ExceptionHandler(
             {
-                    InvalidTitleException.class,
-                    InvalidAuthorException.class,
                     DuplicateIdFoundException.class,
                     BookNotFoundByIdException.class,
-                    BookNotFoundByTitle.class
+                    BookNotFoundByTitle.class,
+                    Exception.class
             }
     )
     public ResponseEntity<ErrorStructure> handleExceptions(RuntimeException ex) {

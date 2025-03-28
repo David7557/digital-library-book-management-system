@@ -8,5 +8,5 @@ public class BookEntity {
     private String title;
     private String author;
     private String genre;
-    private Boolean availabilityStatus;
+    private String availabilityStatus;
 }
