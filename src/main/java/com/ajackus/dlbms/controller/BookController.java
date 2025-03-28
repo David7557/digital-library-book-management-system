@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.awt.print.Book;
 import java.util.HashSet;
 
 @RestController
@@ -25,6 +26,11 @@ public class BookController {
     public ResponseEntity<HashSet<BookEntity>> viewAllBooks() {
         var books = bookService.viewAllBooks();
         return ResponseEntity.ok(books).getBody();
+    }
+    @GetMapping("/{bookId}")
+    public ResponseEntity<BookEntity> findBookById(@PathVariable String bookId){
+        var book = bookService.findBybookId(bookId);
+        return ResponseEntity.ok(book).getBody();
     }
 
 }

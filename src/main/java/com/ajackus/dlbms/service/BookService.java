@@ -1,6 +1,7 @@
 package com.ajackus.dlbms.service;
 
 import com.ajackus.dlbms.entity.BookEntity;
+import com.ajackus.dlbms.exception.BookNotFoundByIdException;
 import com.ajackus.dlbms.exception.DuplicateIdFoundException;
 import com.ajackus.dlbms.exception.InvalidAuthorException;
 import com.ajackus.dlbms.exception.InvalidTitleException;
@@ -44,6 +45,16 @@ public class BookService {
             bookEntitySet.add(books.get(key));
         }
         return ResponseEntity.ok(bookEntitySet);
+    }
+
+    public ResponseEntity<BookEntity> findBybookId(String bookId){
+        var book = books.get(bookId);
+
+        if(book != null){
+            return ResponseEntity.ok(book);
+        }else {
+            throw new BookNotFoundByIdException("Book you're trying find with bookId: "+bookId+" is not exist in db");
+        }
     }
 
 }
