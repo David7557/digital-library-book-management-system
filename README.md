@@ -63,6 +63,15 @@ The **Digital Library Book Management System** is a Java-based application that 
 | `PUT`      | `/books/{bookId}`   | Update book details                |
 | `DELETE`   | `/books/{bookId}`   | Delete a book                      |
 
+## ⌛ Examples as per API endpoinds format:
+   ```sh
+   {
+      "bookId": "ISBN001",
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert T. Kiyosaki",
+      "genre": "Business"
+   }
+   ```
 ## ✅ Constraints
 - **Book ID must be unique**.
 - **Title and Author must be non-empty strings**.
