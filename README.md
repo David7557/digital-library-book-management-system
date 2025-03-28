@@ -40,7 +40,16 @@ The **Digital Library Book Management System** is a Java-based application that 
    ```sh
    mvn spring-boot:run
    ```
-5. The application will be available at: `http://localhost:8080`
+5. The application will be available at:
+   `http://localhost:8080`
+7. To stop the Spring Boot application:
+   ```sh
+   ctrl + c or mvn spring-boot:stop
+   ```
+8. To clean the project:
+   ```sh
+   mvn clean
+   ````
 
 ## 🔥 API Endpoints
 | HTTP Method | Endpoint            | Description                        |
