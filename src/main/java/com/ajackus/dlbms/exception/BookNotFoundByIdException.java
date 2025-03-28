@@ -5,8 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter
-@Setter
 @AllArgsConstructor
-public class InvalidAuthorException extends RuntimeException {
+public class BookNotFoundByIdException extends RuntimeException{
     private String message;
 }

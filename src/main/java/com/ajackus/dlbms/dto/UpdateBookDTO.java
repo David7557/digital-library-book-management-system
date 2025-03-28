@@ -1,10 +1,11 @@
-package com.ajackus.dlbms.entity;
+package com.ajackus.dlbms.dto;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-public class BookEntity {
-    private String bookId;
+@Getter
+@Setter
+public class UpdateBookDTO {
     private String title;
     private String author;
     private String genre;
