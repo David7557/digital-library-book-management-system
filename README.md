@@ -26,11 +26,11 @@ The **Digital Library Book Management System** is a Java-based application that 
 ### Steps to Run the Project
 1. Clone the repository:
    ```sh
-   git clone https://github.com/David7557/digital-library-book-management.git
+   git clone https://github.com/David7557/digital-library-book-management-system.git
    ```
 2. Navigate to the project directory:
    ```sh
-   cd digital-library-book-management
+   cd digital-library-book-management-system
    ```
 3. Build the project using Maven:
    ```sh
@@ -67,9 +67,6 @@ The **Digital Library Book Management System** is a Java-based application that 
 - Implement database integration for persistence.
 - Improve exception handling.
 - Implement UI for user-friendly interactions.
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
 
 ## 👨‍💻 Author
 - **David Kumar Hansdah**  
